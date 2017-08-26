@@ -1,0 +1,2 @@
+INSERT INTO groupon.favorite (user_id, deal_id, deal_sku_id, create_time, update_time) VALUES (6, 3, 100002, '2017-06-24 02:34:45', '2017-06-24 02:34:45');
+INSERT INTO groupon.favorite (user_id, deal_id, deal_sku_id, create_time, update_time) VALUES (6, 4, 100003, '2017-06-24 02:34:56', '2017-06-24 02:34:56');

@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+.bread-nav-body{
+	font-size: 14px;
+    padding-top: 17px;
+    padding-bottom: 6px;
+}
+.bread-nav-left>div{
+	width: 950px;
+	padding: 0;
+}
+.bread-nav-left>div>a{
+	display: inline;
+}
+.bread-nav-right{
+	text-align: right;
+    padding-right: 3px;
+    font-size: 12px;
+}
+.bread-nav-right>span{
+	color: #ff3300;
+    font-size: 14px;
+    margin: 0 2px;
+    font-weight: bold;
+}
+.goods-list>div{
+	margin-top: 10px;
+    margin-bottom: 40px;
+}
+.row{
+	padding-left: 15px;
+}
+.row .pro{
+	float: left;
+	width: 213px;
+    margin-top: 25px;
+    margin-right: 18px;
+    padding: 6px;
+    border: 1px solid #eee;
+    position: relative;
+}
+.pro>.img{
+	width: 100%;
+    height: 220px;
+}
+.pro>.name{
+	width: 100%;
+    margin-top: 10px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    word-break: break-all;
+}
+.pro>.price{
+	width: 100%;
+    margin-top: 10px;
+    height: 33px;
+    line-height: 33px;
+    color: #fc3309;
+    font-size: 12px;
+}
+.nowprice{
+	font-size: 18px;
+}
+.nowprice>.s1{
+	font-size: 12px;
+}
+.nowprice>.s2{
+	margin-left: -5px;
+}
+.price>.count{
+	margin-right: 10px;
+    font-size: 14px;
+    color: #7a7a7a;
+}
+.pro>.operate{
+	width: 100%;
+    padding: 5px 0;
+    overflow: hidden;
+}
+.operate>.addcart{
+	width: 86px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    background: #f64747;
+    border-radius: 3px;
+    font-size: 14px;
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+}
+.operate>.focusbtn{
+    height: 24px;
+    line-height: 22px;
+    border: 1px #d6d6d6 solid;
+    text-align: center;
+    color: #848484;
+    background: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+    display: inline-block;
+    float: left;
+    margin: 0 15px;
+    padding: 0 6px;
+    cursor: pointer;
+}
+
+.operate>.focusbtn:hover{
+	color:#f64747; 
+	border:1px #f64747 solid;
+}
+.page-nav>div{
+	margin-bottom: 30px;
+}
+.page-nav .page-body{
+	padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    margin: 3px;
+    padding-top: 3px;
+    text-align: center;
+}
+.page-body a[disabled="disabled"], div.page-body a[disabled="disabled"]:hover {
+    color: #ababab;
+    background-color: #eee;
+    cursor: default;
+    border-color: #ababab;
+}
+div.page-body a {
+    color: #1cbfda;
+}
+div.page-body a, div.page-body span.current {
+    border: 1px solid #ababab;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Arial;
+    display: inline-block;
+}
+div.page-body a:hover, div.page-body span.current {
+    background-color: #1cbfda;
+    border: 1px solid #1cbfda;
+}
+div.page-body a:hover, div.page-body span.current {
+    color: #fff;
+    background: #1cbfda;
+    border: 1px solid #1cbfda;
+}
+div.page-body a.pre, div.page-body a.next {
+    width: 68px;
+}

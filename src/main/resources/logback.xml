@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <!-- 日志文件存放的位置 -->
+    <property name="LOG_HOME" value="/Users/road/logbacklogs" />
+
+    <!--   日志输出格式  -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{50}[%line] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 日志输出位置详细配置 -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/GrouponSite.log</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{50}[%line] %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/GrouponSite-%d{yyyy-MM-dd}.log</fileNamePattern>
+        </rollingPolicy>
+        <!--<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">-->
+        <!--<MaxFileSize>20MB</MaxFileSize>-->
+        <!--</triggeringPolicy>-->
+    </appender>
+
+    <!-- 日志输出级别 : ERROR>WARN>DEBUG>INFO -->
+    <root level="ERROR">
+        <appender-ref ref="STDOUT" />
+        <!--<appender-ref ref="FILE" />-->
+    </root>
+</configuration>

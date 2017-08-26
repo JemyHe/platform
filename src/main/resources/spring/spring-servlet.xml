@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+	default-lazy-init="true">
+
+
+
+	<!-- 配置springmvc -->
+	<!-- 1.开启springmvc注解模式 -->
+	<!-- 简化配置：
+		 —(1)自动注册Handlermapping和HandlerAdaptor
+		 _(2)提供一系列:数据绑定，数字，日期的format @NumberFormat,@DataTimeFormat
+		 	  xml,json默认读写支持-->
+	<mvc:annotation-driven></mvc:annotation-driven>
+
+	<!-- servlet-mapping 映射路径："/"-->
+	<!-- 2.静态资源默认servlet配置
+		 _(1)加入对静态资源的处理，js.gif.png
+		 _(2)允许使用 "/"做整体映射
+		-->
+	<mvc:default-servlet-handler/>
+
+	<!--<mvc:resources mapping="/images/**" location="/images/"/>
+	<mvc:resources mapping="/js/**" location="/js/" />
+	<mvc:resources mapping="/style/**" location="/style/" />
+	<mvc:resources mapping="*.html" location="/" />
+	<mvc:resources location="*.txt" mapping="/"/>-->
+
+	<!-- 扫描Controller注解 -->
+	<context:component-scan base-package="com.xingxue.class11.controller" ></context:component-scan>
+
+	<!-- spring拦截器 -->
+	<mvc:interceptors>
+		<!-- 登陆拦截器 -->
+		<mvc:interceptor>
+			<mvc:mapping path="/cart/**"/>
+			<mvc:mapping path="/home/*"/>
+			<mvc:mapping path="/settlement/*"/>
+			<mvc:mapping path="/settlement"/>
+			<bean class="com.xingxue.class11.framework.interceptor.LoginInterceptor"/>
+		</mvc:interceptor>
+
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean class="com.xingxue.class11.framework.interceptor.UserInterceptor" />
+		</mvc:interceptor>
+
+		<!--<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean class="com.tortuousroad.framework.web.interceptor.HelperInterceptor" />
+		</mvc:interceptor>-->
+
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean class="com.xingxue.class11.framework.interceptor.CtxInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+	<!-- 3.配置jsp 的 ViewResolver -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"></property>
+		<property name="prefix" value="/WEB-INF/jsp/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+
+
+</beans>

@@ -1,0 +1,3 @@
+INSERT INTO groupon.message (user_id, title, content, readed, create_time, update_time) VALUES (6, '大促销么么哒', '消息A', '1', '2017-06-24 02:43:15', '2017-06-24 10:44:45');
+INSERT INTO groupon.message (user_id, title, content, readed, create_time, update_time) VALUES (6, '大促销A么么哒', '消息B', '0', '2017-06-24 02:43:32', '2017-06-24 02:43:32');
+INSERT INTO groupon.message (user_id, title, content, readed, create_time, update_time) VALUES (6, '大促销B么么哒', '消息C', '0', '2017-06-24 02:43:55', '2017-06-24 02:43:55');

@@ -1,0 +1,2 @@
+INSERT INTO groupon.admin_user (name, password, create_time, update_time) VALUES ('admin', '21232f297a57a5a743894a0e4a801fc3', '2014-02-20 17:59:43', '2014-02-20 18:07:29');
+INSERT INTO groupon.admin_user (name, password, create_time, update_time) VALUES ('test', '098f6bcd4621d373cade4e832627b4f6', '2014-02-20 17:59:43', '2014-02-20 18:07:29');

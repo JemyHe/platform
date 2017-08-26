@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+body{
+	color: #686868;
+    font-size: 12px;
+    font-family: Arial,'Microsoft YaHei';
+}
+body, div, span, h1, h2, h3, h4, h5, h6, hr, p, blockquote, strong, var, b, u, i,a,center, dl, dt, dd, ul, ol, li, prea, address, fieldset, form, fieldset, label, legend, button, input, textarea, th, td, header, footer {
+    margin: 0;
+    padding: 0;
+}
+ul,ol{list-style-type:none;}
+i {font-style:normal}
+a:hover,a:visited,a:focus{text-decoration: none;}
+a{display: block;color: #333;cursor: pointer}
+.clear{    clear: both;}

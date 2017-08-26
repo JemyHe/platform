@@ -1,0 +1,1 @@
+INSERT INTO groupon.admin_user_role (admin_user_id, admin_role_id, create_time, update_time) VALUES (2, 3, '2016-11-01 19:06:21', null);

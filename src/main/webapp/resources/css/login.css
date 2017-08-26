@@ -1,0 +1,127 @@
+@charset "utf-8";
+.top-part{
+	height: 100px;
+}
+.top-part-left .logo{
+	margin-right: 25px;
+}
+.top-part-left h2{
+	width: 114px;
+    height: 34px;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 34px;
+    color: #fff;
+    font-size: 20px;
+    background: url(/resources/images/login-icon.png) 0 -34px no-repeat;
+}
+.top-part-right{
+	font-size: 18px;
+    color: #242424;
+    line-height: 100px;
+}
+.top-part-right>span{
+	font-size: 20px;
+} 
+.login-back{
+	background: url(/resources/images/login_back.jpg) center top no-repeat;
+}
+.login-back .container{
+	position: relative;
+	height: 480px;
+}
+.input-box{
+	width: 308px;
+    padding: 0 21px 48px;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    position: absolute;
+    top: 85px;
+    right: 0;
+}
+.input-box .title{
+	color: #222;
+    overflow: hidden;
+    padding: 30px 0 10px;
+    line-height: 20px;
+}
+.title h1{
+	font-size: 18px;
+}
+.title h2{
+	font-size: 14px;
+}
+.title h2 a{
+	display: inline;
+	color: #006cbb;
+}
+.input-box .input{
+	margin-top: 10px;
+    position: relative;
+}
+.input input{
+    display: block;
+    border: #bebebe solid 1px;
+    border-radius: 2px;
+    padding: 20px 0 20px 45px;
+    width: 260px;
+    height: 18px;
+    line-height: 18px;
+    color: rgb(204, 204, 204);
+    font-size: 13px;
+    outline: none;
+}
+.input .icon-01{
+	background-position: 0 -84px;
+}
+.input .icon-02{
+	background-position: -16px -84px;
+}
+.input h1{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 16px;
+    top: 50%;
+    margin-top: -8px;
+    background: url(/resources/images/login-icon.png) no-repeat;
+    z-index: 1;
+}
+.input-box .remember-box{
+	padding: 22px 0 20px;
+    line-height:25px;
+}
+.remember-box .remember{
+	color: #2b2b2b;
+    font-size: 14px;
+}
+.remember input{
+	cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+}
+.remember-box .forget {
+    font-size: 14px;
+    color: #bababa;
+}
+.login-btn{
+	background-color: rgb(0, 108, 187);
+    display: block;
+    height: 42px;
+    border-radius: 3px;
+    line-height: 42px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.login-btn:hover{
+	color: #fff;
+}
+.disabled{
+    background-color: rgb(199, 204, 208);
+}

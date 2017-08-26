@@ -1,0 +1,6 @@
+INSERT INTO groupon.address (user_id, receiver, area, detail, type, phone, create_time, update_time) VALUES (1, '张无忌', '北京市朝阳区', '永安里LG双子大厦B做1808', '0', '13800000000', '2016-09-21 21:19:31', '2016-09-21 21:19:31');
+INSERT INTO groupon.address (user_id, receiver, area, detail, type, phone, create_time, update_time) VALUES (1, '张无忌', '北京市朝阳区', '八里庄', '0', '13900000000', '2016-09-21 21:19:31', '2016-09-21 21:19:31');
+INSERT INTO groupon.address (user_id, receiver, area, detail, type, phone, create_time, update_time) VALUES (1, '张翠山', '山西武当', '武当山武当观', '0', '13600000000', '2016-10-13 23:30:37', '2016-10-13 23:30:37');
+INSERT INTO groupon.address (user_id, receiver, area, detail, type, phone, create_time, update_time) VALUES (6, '何冠雄', '陕西省西安市碑林区', '雁塔北路68号百脑汇科技大厦13层A11', '0', '15098860780', '2017-06-24 01:52:53', '2017-06-24 01:52:53');
+INSERT INTO groupon.address (user_id, receiver, area, detail, type, phone, create_time, update_time) VALUES (6, '何冠雄', '陕西省西安市碑林区', '地址A', '0', '15098860780', '2017-06-24 01:54:22', '2017-06-24 01:54:22');
+INSERT INTO groupon.address (user_id, receiver, area, detail, type, phone, create_time, update_time) VALUES (7, '何冠雄', '河北省保定市', '第三方撒地方sad范德萨发', '1', '15098860780', '2017-08-18 16:21:17', '2017-08-18 16:21:17');

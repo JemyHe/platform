@@ -1,0 +1,5 @@
+INSERT INTO groupon.user_basic_info (id, nickname, real_name, mail, phone, create_time, update_time) VALUES (1, 'road', '测试更新方法', 'road@road.com', '13600000000', '2016-10-14 05:28:11', '2016-12-18 06:38:12');
+INSERT INTO groupon.user_basic_info (id, nickname, real_name, mail, phone, create_time, update_time) VALUES (2, '小清新', '何冠雄', '546016981@qq.com', '15098860780', '2017-06-27 13:11:47', '2017-06-27 13:11:47');
+INSERT INTO groupon.user_basic_info (id, nickname, real_name, mail, phone, create_time, update_time) VALUES (3, 'hegx', '何先生', '12312321@qq.com', '15099876879', '2017-06-28 07:41:48', '2017-06-28 07:41:48');
+INSERT INTO groupon.user_basic_info (id, nickname, real_name, mail, phone, create_time, update_time) VALUES (4, '小清新', '何冠雄', '546016981@qq.com', '15098860780', '2017-06-28 07:36:38', '2017-06-28 07:36:38');
+INSERT INTO groupon.user_basic_info (id, nickname, real_name, mail, phone, create_time, update_time) VALUES (6, '小清新', '何冠雄', '546016981@qq.com', '15098860781', '2017-06-22 02:27:00', '2017-06-22 02:35:52');
